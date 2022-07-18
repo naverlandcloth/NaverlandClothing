@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header{
+    background-color: #ffe6e6;
+}
+.header .row{
+    margin-top: 70px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color:#595959;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*------- media query for menu -------*/
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #ffe6e6;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/*--footer--*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 2opx;
+}
+.footer-col-1,.footer-col-2,.footer-col-3, .footer-col-4{
+   min-width: 250px;
+   margin-bottom: 20px;    
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1%;
+    text-align: center;
+}
+.footer-col-2 img{
+    width:80px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+} 
+.app-logo{
+    margin-top: 20px;
+} 
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}    
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}    
+}
+  body {
+    margin: 0;
+    padding: 0;
+    background: #ffe6e6;
+    font-size: 16px;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+  
+  #login-box {
+    position: relative;
+    margin: 5% auto;
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+  }
+  
+  h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #16a085;
+    color: #16a085;
+    transition: 0.2s ease;
+  }
+  
+  input[type="submit"] {
+    margin-top: 28px;
+    width: 120px;
+    height: 32px;
+    background: #ff9292;
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  .or {
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #DDD;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background: url('https://goo.gl/YbktSj');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+  }
+  .right p{
+    font-size: small;
+  }
+  .right .loginwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+  }
+  
+  button.social-signin {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  button.social-signin:hover,
+  button.social-signin:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+  
+  button.social-signin:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+  
+  button.social-signin.Facebook {
+    background: #32508E;
+  }
+  
+  button.social-signin.Instagram {
+    background: #DD4B39;
+  }
+  button.social-signin.AddNewAddress{
+    background: #32508E;
+}
+ button.social-signin.GCash{
+    background: #32508E;
+}
+ button.social-signin.COD{
+    background: #32508E;
+}
+button.social-signin.CheckOut{
+    background: #32508E;
+}
+.col-2 img{
+    padding: auto 0;
+    margin: 10px;
+}
+/*media query for less than 600 screen size*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        margin: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
+

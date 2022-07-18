@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="profile_style.css">
+
+	<title>Clickable Dropdown - Naverland Clothing</title>
+</head>
+<body>
+	<div class="dropdown-item">
+		<div class="LOGO" onclick="myFunction()">
+			<img src="LOGO.png" alt="Pure Coding">
+		</div>
+		<div class="dropdown-content">
+			<div class="content">
+				<div class="name">Naverland Clothing, Inc.</div>
+				<div class="occupation">We Cherish Youth</div>
+			</div>
+			<ul class="links">
+				<li><a href="#"></i> My Profile</a></li>
+				<li><a href="#"></i> Home</a></li>
+				<div class="divider"></div>
+				<li><a href="#"></i> Menu</a></li>
+				<li><a href="#"></i> My Orders</a></li>
+				<div class="divider"></div>
+				<li><a href="#"></i> Logout</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		function myFunction() {
+			var dropdownContent = document.querySelector('.dropdown-content');
+			dropdownContent.classList.toggle('dropdown-toggle');
+		}
+	</script>
+</body>
+</html>
